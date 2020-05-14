@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<ArrayOfQuestions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Questions>
+    <answers>
+      <Answer>
+        <Ans>середовище розробки</Ans>
+        <check>false</check>
+      </Answer>
+      <Answer>
+        <Ans>щось дивне</Ans>
+        <check>false</check>
+      </Answer>
+      <Answer>
+        <Ans>мова програмування</Ans>
+        <check>true</check>
+      </Answer>
+    </answers>
+    <Question>Що таке С#?</Question>
+  </Questions>
+  <Questions>
+    <answers>
+      <Answer>
+        <Ans>ctrl+v</Ans>
+        <check>false</check>
+      </Answer>
+      <Answer>
+        <Ans>ctrl+c</Ans>
+        <check>false</check>
+      </Answer>
+	  <Answer>
+        <Ans>alt+f4</Ans>
+        <check>true</check>
+      </Answer>
+    </answers>
+    <Question>Яким сполученняи клавіш можна закрити програму?</Question>
+  </Questions>
+  <Questions>
+    <answers>
+      <Answer>
+        <Ans>ліст</Ans>
+        <check>false</check>
+      </Answer>
+      <Answer>
+        <Ans>Список будь-яких об'єктів</Ans>
+        <check>false</check>
+      </Answer>
+	  <Answer>
+        <Ans>Generic Collection</Ans>
+        <check>true</check>
+      </Answer>
+    </answers>
+    <Question>Що таке List?</Question>
+  </Questions>
+  <Questions>
+    <answers>
+      <Answer>
+        <Ans>string </Ans>
+        <check>false</check>
+      </Answer>
+      <Answer>
+        <Ans>array</Ans>
+        <check>false</check>
+      </Answer>
+	  <Answer>
+        <Ans>int</Ans>
+        <check>true</check>
+      </Answer>
+	  <Answer>
+        <Ans>float </Ans>
+        <check>true</check>
+      </Answer>
+    </answers>
+    <Question>Які з наведени нижче типів є value-type?</Question>
+  </Questions>
+</ArrayOfQuestions>
