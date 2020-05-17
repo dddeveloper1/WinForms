@@ -93,7 +93,7 @@
             // 
             this.tbName.BackColor = System.Drawing.SystemColors.Window;
             this.tbName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbName.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.tbName.ForeColor = System.Drawing.Color.Black;
             this.tbName.Location = new System.Drawing.Point(87, 14);
             this.tbName.Margin = new System.Windows.Forms.Padding(4);
             this.tbName.Name = "tbName";
@@ -363,7 +363,7 @@
             // pictureBox1
             // 
             this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(556, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(519, 15);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(245, 250);
             this.pictureBox1.TabIndex = 8;

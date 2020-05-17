@@ -91,7 +91,6 @@ namespace ListBox_with_DataSource
             {
                 xml.Serialize(stream, team);
             }
-            label2.Visible = true;
             timer1.Start();
         }
 
@@ -107,9 +106,13 @@ namespace ListBox_with_DataSource
             if(timer == 2)
             {
                 timer1.Stop();
-                label2.Visible = false;
                 timer = 0;
             }
+        }
+
+        private void ListBoxDS_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

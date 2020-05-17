@@ -43,12 +43,9 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.lbSelectedTeam = new System.Windows.Forms.ListBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.nudTeamSize)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbAll
@@ -101,26 +98,30 @@
             // 
             // btnSaveRedXml
             // 
+            this.btnSaveRedXml.BackColor = System.Drawing.Color.Red;
             this.btnSaveRedXml.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaveRedXml.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnSaveRedXml.Font = new System.Drawing.Font("Calisto MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveRedXml.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSaveRedXml.Location = new System.Drawing.Point(13, 222);
             this.btnSaveRedXml.Name = "btnSaveRedXml";
             this.btnSaveRedXml.Size = new System.Drawing.Size(349, 31);
             this.btnSaveRedXml.TabIndex = 5;
             this.btnSaveRedXml.Text = "Save to XML (Red team)";
-            this.btnSaveRedXml.UseVisualStyleBackColor = true;
+            this.btnSaveRedXml.UseVisualStyleBackColor = false;
             this.btnSaveRedXml.Click += new System.EventHandler(this.btnSaveRedXml_Click);
             // 
             // btnSaveBlueXml
             // 
+            this.btnSaveBlueXml.BackColor = System.Drawing.Color.Blue;
             this.btnSaveBlueXml.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaveBlueXml.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnSaveBlueXml.Font = new System.Drawing.Font("Calisto MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveBlueXml.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSaveBlueXml.Location = new System.Drawing.Point(438, 222);
             this.btnSaveBlueXml.Name = "btnSaveBlueXml";
             this.btnSaveBlueXml.Size = new System.Drawing.Size(350, 31);
             this.btnSaveBlueXml.TabIndex = 5;
             this.btnSaveBlueXml.Text = "Save to XML (Blue team)";
-            this.btnSaveBlueXml.UseVisualStyleBackColor = true;
+            this.btnSaveBlueXml.UseVisualStyleBackColor = false;
             this.btnSaveBlueXml.Click += new System.EventHandler(this.btnSaveRedXml_Click);
             // 
             // nudTeamSize
@@ -190,29 +191,6 @@
             this.lbSelectedTeam.Size = new System.Drawing.Size(776, 108);
             this.lbSelectedTeam.TabIndex = 9;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 444);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 20);
-            this.panel1.TabIndex = 10;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(800, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Saved";
-            this.label2.Visible = false;
-            // 
             // timer1
             // 
             this.timer1.Interval = 1000;
@@ -222,8 +200,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 464);
-            this.Controls.Add(this.panel1);
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ClientSize = new System.Drawing.Size(800, 485);
             this.Controls.Add(this.lbSelectedTeam);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
@@ -236,13 +214,14 @@
             this.Controls.Add(this.btnAddToRedTeam);
             this.Controls.Add(this.lbAll);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ListBoxDS";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DataSource";
+            this.Text = "Game";
+            this.Load += new System.EventHandler(this.ListBoxDS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudTeamSize)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,8 +242,6 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.ListBox lbSelectedTeam;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer1;
     }
 }
